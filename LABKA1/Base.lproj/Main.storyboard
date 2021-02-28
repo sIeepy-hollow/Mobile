@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lOh-Bi-Cpy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="IFR-wz-Wdg">
+            <objects>
+                <viewController id="TVc-yU-fce" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wc5-aS-a2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Uwd-IB-BwP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Jzs-3f-Nid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aq8-ol-0ci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="378"/>
+        </scene>
+        <!--pokemonshina-->
+        <scene sceneID="ZNd-py-IhQ">
+            <objects>
+                <viewController id="f5V-ey-1ig" customClass="ViewController" customModule="LABKA1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51e-ho-0fp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Шебетін Богдан Група ІВ-83 ЗК ІВ-8329" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0C-qD-5O1">
+                                <rect key="frame" x="144" y="417.5" width="126.5" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zZ5-dz-ymu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u0C-qD-5O1" firstAttribute="centerY" secondItem="51e-ho-0fp" secondAttribute="centerY" id="4Pe-Ef-E5m"/>
+                            <constraint firstItem="u0C-qD-5O1" firstAttribute="centerX" secondItem="51e-ho-0fp" secondAttribute="centerX" id="Scv-u7-gw6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pokemonshina" image="moon.zzz.fill" catalog="system" id="EZ5-U7-gP3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPV-ct-PdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="-227"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rrv-L3-enw">
+            <objects>
+                <tabBarController id="lOh-Bi-Cpy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bHG-xX-e33">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f5V-ey-1ig" kind="relationship" relationship="viewControllers" id="2Ne-G4-oN6"/>
+                        <segue destination="TVc-yU-fce" kind="relationship" relationship="viewControllers" id="ClG-SK-dMG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dO-P9-bp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="moon.zzz.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
